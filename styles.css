@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#main-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+#network-container {
+    width: 70%;
+    height: 80vh;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.category-filter {
+    margin-bottom: 15px;
+}
+
+.category-filter label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.category-filter input {
+    margin-right: 10px;
+}
+
+button#reset-filters {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button#reset-filters:hover {
+    background-color: #1a252f;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#graph-container {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.links line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+}
+
+.nodes circle {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}

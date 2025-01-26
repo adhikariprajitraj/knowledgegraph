@@ -1,0 +1,25 @@
+{
+  "nodes": [
+      { "id": 1, "label": "Introduction to OR", "group": "foundation" },
+      { "id": 2, "label": "Mathematical Foundations", "group": "foundation" },
+      { "id": 3, "label": "Linear Programming", "group": "optimization" },
+      { "id": 4, "label": "Integer Programming", "group": "optimization" },
+      { "id": 5, "label": "Nonlinear Programming", "group": "optimization" },
+      { "id": 6, "label": "Dynamic Programming", "group": "optimization" },
+      { "id": 7, "label": "Simulation", "group": "application" },
+      { "id": 8, "label": "Decision Analysis", "group": "application" },
+      { "id": 9, "label": "Stochastic Processes", "group": "application" },
+      { "id": 10, "label": "Advanced Topics", "group": "application" },
+      { "id": 11, "label": "Software Tools", "group": "application" },
+      { "id": 12, "label": "Case Studies", "group": "application" }
+  ],
+  "edges": [
+      { "from": 1, "to": 2 },
+      { "from": 2, "to": 3 }, { "from": 2, "to": 4 }, { "from": 2, "to": 5 }, { "from": 2, "to": 6 },
+      { "from": 3, "to": 7 }, { "from": 3, "to": 8 }, { "from": 3, "to": 11 },
+      { "from": 4, "to": 7 }, { "from": 4, "to": 12 },
+      { "from": 5, "to": 9 }, { "from": 5, "to": 10 },
+      { "from": 6, "to": 8 }, { "from": 6, "to": 9 },
+      { "from": 7, "to": 12 }, { "from": 8, "to": 12 }, { "from": 9, "to": 12 }, { "from": 10, "to": 12 }
+  ]
+}

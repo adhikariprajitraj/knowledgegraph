@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operations Research Learning Paths</title>
+    <title>OR Knowledge Graph</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Operations Research Learning Paths</h1>
+    <header role="banner">
+        <h1>Operations Research Learning Path</h1>
+        <p class="subtitle" id="page-description">Interactive Knowledge Graph with Curated Resources</p>
     </header>
-    <main id="main-container">
-        <section id="network-container"></section>
-        <aside id="sidebar">
-            <h3>Filter Topics</h3>
-            <div class="category-filter">
-                <label>
-                    <input type="checkbox" class="category-checkbox" value="foundation" checked> Foundation
-                </label>
+
+    <main id="main-container" role="main" aria-describedby="page-description">
+        <div id="loading" class="loading" role="status" aria-live="polite">Loading knowledge graph...</div>
+        <section id="network-container" role="region" aria-label="Knowledge Graph Visualization"></section>
+        
+        <!-- Updated Sidebar with additional spacing -->
+    
+
+        <!-- Resource Popup -->
+        <div id="popup-overlay" role="presentation"></div>
+        <div id="resource-popup" role="dialog" aria-labelledby="node-title" aria-modal="true">
+            <div class="popup-header">
+                <h2 id="node-title"></h2>
+                <button id="close-popup" aria-label="Close popup">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
             </div>
-            <!-- <div class="category-filter">
-                <label>
-                    <input type="checkbox" class="category-checkbox" value="optimization" checked> Optimization
-                </label>
-            </div>-->
-            <div class="category-filter">
-                <label>
-                    <input type="checkbox" class="category-checkbox" value="application" checked> Applications
-                </label>
-            </div>
-            <button id="reset-filters">Reset All</button>
-        </aside>
+            <div id="resource-content" role="list"></div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2023 Operations Research Learning Paths</p>
+    <footer role="contentinfo">
+        <p>&copy; 2025 Operations Research Learning Paths</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

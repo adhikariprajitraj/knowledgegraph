@@ -15,12 +15,12 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/knowledge-graph-website.git
+   git clone https://github.com/adhikariprajitraj/knowledgegraph
    ```
 
 2. Navigate to the project directory:
    ```
-   cd knowledge-graph-website
+   cd knowledgegraph
    ```
 
 3. Open `index.html` in your web browser.
